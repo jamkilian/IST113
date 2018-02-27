@@ -1,0 +1,31 @@
+function addNumbers (x, y){
+    console.log("AddNumbers: " + (x + y));
+}
+
+function subtractNumbers (x, y) {
+    console.log("subtractNumbers: " + x - y);   
+}
+
+function multiplyNumbers (x, y) {
+    console.log("multiplyNumbers: " + x * y);
+}
+
+function dividNumbers (x, y) {
+    console.log("dividNumbers: "+ x / y);
+}
+
+function myDriver() {
+    console.log("we want to add:" + (3 +"," + 4));
+    console.log(addNumbers(3,4));
+
+    console.log("we want to substract:" + (3 +"," - 4));
+    console.log(subtractNumbers(3,4));
+
+    console.log("we want to multiply:" + (3 +"," * 4));
+    console.log(multiplyNumbers(3,4));
+
+    console.log("we want to divid:" + (3 +"," / 4));
+    console.log(dividNumbers(3,4));
+}
+
+myDriver();
