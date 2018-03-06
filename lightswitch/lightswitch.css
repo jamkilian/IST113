@@ -1,1 +1,49 @@
+#backgound {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 80px;
+  height: 20px;
+  padding: 20;
+  background-color: red;
+  border-radius: 30px;
+}
 
+#toggle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  bottom: 75%;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+  border-radius: 30px;
+  right: 27px;
+}
+
+.switch input {display: none};
+
+.slider {
+    transition: .4s;
+    cursor: crosshair;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+ }
+
+.slider:before {
+  height: 26px;
+  width: 26px;
+  background-color: black;
+  z-index: 1;
+}
+
+.position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+
+}
