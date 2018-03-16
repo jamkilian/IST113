@@ -1,13 +1,13 @@
-
 function start() {
-   let t = document.getElementsById("toggle");
-   t.addEventListener('onclick', toggle);
-}
+  var click = document.getElementById("slider");
+  click.addEventListener("click", toggle);
+};
 
 function toggle() {
-  var color = document.getElementsById("position");
-  color.style.background = blue;
-}
+  var color = document.getElementById("body");
+  var backColor = color.style.backgroundColor;
+  color.style.backgroundColor = backColor === "black" ? "white" : "black";
+};
+
 
 start();
-toggle();
