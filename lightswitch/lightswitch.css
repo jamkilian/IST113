@@ -1,49 +1,67 @@
-#backgound {
-  margin: auto;
-  position: relative;
-  top: 50%;
-  width: 80px;
-  height: 20px;
-  padding: 20;
-  background-color: red;
-  border-radius: 30px;
+#click {
+  margin: 50%;
 }
 
-#toggle {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  bottom: 75%;
+#OFF {
+  left: 65px;
   position: relative;
-  margin: auto;
-  z-index: 1;
-  border-radius: 30px;
-  right: 27px;
+  z-index: -1;
+  top: 1px;
+  font-size: 20px;
+  font-family: arial;
 }
 
-.switch input {display: none};
+#ON {
+  left: 18px;
+  position: relative;
+  z-index: -1;
+  top: -42px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 64px;
+  margin: auto;
+
+}
+
+#switch input {
+  display: none;
+}
 
 .slider {
-    transition: .4s;
-    cursor: crosshair;
-    width: 50px;
-    height: 50px;
-    background-color: black;
- }
-
-.slider:before {
-  height: 26px;
-  width: 26px;
-  background-color: black;
+  position: absolute;
+  cursor: pointer;
+  background-color: grey;
+  transition: .4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
 }
 
-.position {
+.slider:before {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: pink;
+  bottom: 7px;
+  transition: .4s;
+  content: "";
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  left: 10px;
+  border-radius: 50%;
+}
 
+input:checked + .slider {
+   background-color: #1583ea;
+}
+
+input:checked + .slider:before {
+  transform: translateX(50px);
 }
