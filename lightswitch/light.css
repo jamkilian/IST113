@@ -1,5 +1,7 @@
 #click {
   margin: 50%;
+  bottom: 500px;
+  position: relative;
 }
 
 #OFF {
@@ -25,7 +27,6 @@
   display: inline-block;
   width: 120px;
   height: 64px;
-  margin: auto;
 }
 
 #switch input {
