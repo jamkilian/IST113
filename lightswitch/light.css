@@ -1,6 +1,12 @@
+#body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
 #click {
   margin: 50%;
-  bottom: 500px;
+  /* bottom: 500px; */
   position: relative;
 }
 
@@ -23,7 +29,7 @@
 }
 
 #switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 120px;
   height: 64px;
