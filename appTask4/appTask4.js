@@ -7,6 +7,25 @@ var Delete = $("#delete");
 var ItemKey = "Task Values";
 var myItems = [];
 
+let contactButton = $('#contact');
+let form = $('#popup');
+
+$(document).ready(function(){
+  Contact();
+  })
+
+function Contact(){
+  $('#contact').on('click', function() {
+    if (form.css("display") == "block")
+    {
+      form.css("display", "none")
+    }
+    else
+    {
+      form.css("display", "block")
+    }
+  });
+}
 
 
 function Local() { //Task button
