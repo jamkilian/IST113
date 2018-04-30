@@ -1,35 +1,3 @@
-.gamespace {
-  width: 400px;
-  height: 620px;
-  background-color: lightblue;
-  margin: 100px auto;
-  opacity: .95;
-}
-
-#start {
-  left: 155px;
-  top: 288.5px;
-  position: relative;
-  color: green;
-}
-
-#showscore {
-  width: 120px;
-  height: 30px;
-  right: 120px;
-  background-color: gray;
-  position: relative;
-}
-
-#highscore {
-  width: 120px;
-  height: 30px;
-  right: 120px;
-  bottom: 61px;
-  background-color: gray;
-  position: relative;
-}
-
 .score {
   top: 5px;
   position: relative;
@@ -37,19 +5,57 @@
   color: white;
 }
 
-#scores {
-  top: 10px;
-  position: relative;
+#gamespace {
+  width: 400px;
+  height: 620px;
+  background-color: lightblue;
+  margin: auto;
+
 }
 
+#showscore {
+  width: 120px;
+  height: 30px;
+  top: 41px;
+  right: 400px;
+  background-color: gray;
+  position: absolute;
+}
+
+#highscore {
+  width: 120px;
+  height: 30px;
+  top: 10px;
+  right: 400px;
+  background-color: gray;
+  position: absolute;
+}
+
+#start {
+  left: 155px;
+  top: 288.5px;
+  position: absolute;
+  color: green;
+}
+
+
 #new {
-  left: 190px;
-  position: relative;
+  left: 69.5%;
+  top: 0%;
+  position: absolute;
 }
 
 #quit {
-  left: 185px;
+  left: 90%;
+  top: 0%;
+  position: absolute;
+}
+
+#container {
+  width: 400px;
+  height: 620px;
   position: relative;
+  margin: auto;
 }
 
 .controls {
@@ -57,14 +63,10 @@
   height: 95px;
   position: relative;
   margin: auto;
-  bottom: 100px;
-  border: solid 5px black;
+  border: solid 2.5px black;
   border-radius: 10px;
 }
 
-.background {
-  z-index: -2;
-}
 
 #wrapper {
   width: 500;
@@ -76,10 +78,13 @@
   background-image: url(spacemovies.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 200%;
 }
 
-#obj1 {
+
+
+
+/* .obj1 {
   width: 30px;
   height: 80px;
   background-color: green;
@@ -87,8 +92,20 @@
   bottom: 21px;
 }
 
-.buttonwrap {
-  width: 500;
-  height: 500;
-  display: inline;
-}
+.obj2 {
+  width: 30px;
+  height: 80px;
+  background-color: green;
+  position:relative;
+  bottom: 102px;
+  left: 40px;
+} */
+
+
+/* #buttonwrap {
+  bottom: 741.5px;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+} */
