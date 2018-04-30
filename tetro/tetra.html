@@ -3,35 +3,36 @@
 <head>
   <title>Tetro</title>
   <link href='tetra.css' rel='stylesheet' type='text/css'>
-  <script src="p5.js"></script>
+  <!-- <script src="p5.js"></script> -->
 </head>
 <body class='body'>
 
 
-  <div class='gamespace'>
+  <div id='container'>
+    <canvas id='gamespace'></canvas>
+    <button id='new'>New Game</button>
+    <button id='quit'>Quit</button>
     <button id='start'>Start Game</button>
-    <div class='buttonwrap'>
-      <button id='new'>New Game</button>
-      <button id='quit'>Quit</button>
+    <div id='showscore'>
+      <label class='score'>Score:</label>
     </div>
 
-
-    <div id='obj1'></div>
-    <div id='scores'>
-      <div id='showscore'>
-        <label class='score'>Score:</label>
-      </div>
-
-      <div id='highscore'>
-        <label class='score'>High Score:</label>
-      </div>
+    <div id='highscore'>
+      <label class='score'>High Score:</label>
     </div>
+  </div>
+
+
+  <div id='append'>
+    <div id='div1'></div>
   </div>
 
   <div id='wrapper'>
     <img src='GameControl.png' class='controls'></img>
   </div>
+  <script type='text/javascript' src='p5.dom.js'></script>
   <script src='jquery-3.3.1.js'></script>
   <script src='tetra.js'></script>
+  <script src='tetraaa.js'></script>
 </body>
 </html>
